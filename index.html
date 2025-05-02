@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sign In Page -->
+    <div id="login-page" class="page">
+        <h2 class="title">Sign In</h2>
+        <input type="text" id="login-username" placeholder="Username">
+        <input type="password" id="login-password" placeholder="Password">
+        <button id="login-btn">Login</button>
+        <p class="switch-text">Don't have an account? <a href="#" id="to-register">Register here</a></p>
+    </div>
+
+    <!-- Registration Page -->
+    <div id="register-page" class="page hidden">
+        <h2 class="title">Register</h2>
+        <input type="text" id="reg-username" placeholder="Username">
+        <input type="password" id="reg-password" placeholder="Password">
+        <button id="register-btn">Register</button>
+        <p class="switch-text">Already have an account? <a href="#" id="to-login">Sign In</a></p>
+    </div>
+
+    <!-- OTP Verification Page -->
+    <div id="otp-page" class="page hidden">
+        <h2 class="title">OTP Verification</h2>
+        <button id="send-otp-btn" class="full-width">Send OTP</button>
+        <input type="text" id="mobile-otp-input" placeholder="Enter Mobile OTP">
+        <input type="text" id="email-otp-input" placeholder="Enter Email OTP">
+        <button id="verify-otp-btn" class="full-width">Verify OTPs</button>
+    </div>
+
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="page hidden">
+        <h2 class="title">Welcome!</h2>
+        <p class="welcome-text">You are now signed in.</p>
+    </div>
+</div>
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
